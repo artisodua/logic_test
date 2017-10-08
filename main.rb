@@ -61,25 +61,18 @@ end
 sum = result_yes + result_sometimes
 puts "Вы набрали: #{sum} баллов"
 
-if
-  sum >= 30 && sum <= 32
+if sum >= 30 && sum <= 32
   puts "#{result_array[0]}"
-elsif
-  sum >= 25 && sum <= 29
+elsif sum >= 25 && sum <= 29
   puts "#{result_array[1]}"
-elsif
-  sum >= 19 && sum <= 24
+elsif sum >= 19 && sum <= 24
   puts "#{result_array[2]}"
-elsif
-  sum >= 14 && sum <= 18
+elsif sum >= 14 && sum <= 18
   puts "#{result_array[3]}"
-elsif
-  sum >= 9 && sum <= 13
+elsif sum >= 9 && sum <= 13
   puts "#{result_array[4]}"
-elsif
-  sum >= 4 && sum <= 8
+elsif sum >= 4 && sum <= 8
   puts "#{result_array[5]}"
-elsif
-  sum <= 3
+elsif sum <= 3
   puts "#{result_array[6]}"
 end
