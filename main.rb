@@ -7,16 +7,15 @@ if (Gem.win_platform?)
   end
 end
 
-require_relative "question"
+require_relative "questions"
 require_relative "result"
 
 user_name = ARGV[0]
-
 user_name = "Таинственный незнакомец" if user_name == nil
 
 puts "#{user_name} добро пожаловать. Предлагаем Вам пройти тест на общительность!"
 
-question = Question.new
+question = Questions.new
 question.question_read
 question.print_question
 

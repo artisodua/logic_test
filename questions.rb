@@ -1,4 +1,4 @@
-class Question
+class Questions
   attr_reader :sum
 
   def initialize
@@ -18,7 +18,7 @@ class Question
       puts question
       user_input = nil
 
-      while (user_input != "1" and user_input != "2" and user_input != "3") do
+      while user_input != "1" and user_input != "2" and user_input != "3" do
         puts "Сделайте сой выбор:\n 1. ДА\n 2. НЕТ\n 3. ИНОГДА"
         user_input = STDIN.gets.chomp
       end
